@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header class="cabecera">
+      <h1><%= title %></h1>
+      <a class="boton" href="/login">Iniciar sesión</a>
+    </header>
+
+    <main>
+      <section>
+        <h2>Tecnologías del tema</h2>
+        <ul class="tarjetas">
+          <% tecnologias.forEach(function(tec) { %>
+            <li class="tarjeta">
+              <img src="<%= tec.imagen %>" alt="Logotipo ilustrativo de <%= tec.nombre %>" />
+              <h3><%= tec.nombre %></h3>
+              <p><%= tec.descripcion %></p>
+            </li>
+          <% }); %>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Apuntes</h2>
+        <ul class="apuntes">
+          <% apuntes.forEach(function(apunte) { %>
+            <li><%= apunte %></li>
+          <% }); %>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

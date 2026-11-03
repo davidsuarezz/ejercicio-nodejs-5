@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0 24px 48px;
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1f2933;
+  background: #f5f7fa;
+}
+
+a {
+  color: #0b6bcb;
+}
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.cabecera h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 32px;
+  border-bottom: 2px solid #d9e2ec;
+  padding-bottom: 6px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 6px;
+  background: #0b6bcb;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: #0a58a8;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarjeta {
+  padding: 16px;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+}
+
+.tarjeta h3 {
+  margin: 8px 0 4px;
+}
+
+.tarjeta p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #52606d;
+}
+
+.apuntes {
+  padding-left: 20px;
+}
+
+/* Página de login */
+.login {
+  max-width: 380px;
+  margin: 64px auto 0;
+  padding: 24px;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.login h1 {
+  margin-top: 0;
+}
+
+.login label {
+  display: block;
+  margin: 16px 0 4px;
+  font-weight: 600;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9aa5b1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.login .boton {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.login .volver {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.mensaje {
+  margin: 16px 0 0;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.mensaje.error {
+  background: #fde8e8;
+  color: #9b1c1c;
+}
+
+.mensaje.ok {
+  background: #e3f9e5;
+  color: #1c6b2a;
+}
